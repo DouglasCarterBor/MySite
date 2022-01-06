@@ -8,5 +8,9 @@ class PaletaCores {
   static const Color corFundo = Color(0xffD9DBD5);
   static const Color corFundoBarra = Color(0xff111111);
   static const Color corFundoBarraClaro = Color(0xfff6f6f6);
+  static const LinearGradient degradeEstoria = LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [Colors.black45, Colors.black45]);
 
 }
