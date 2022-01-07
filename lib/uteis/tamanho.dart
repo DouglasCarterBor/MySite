@@ -22,11 +22,11 @@ class Tamanho {
   }
 
   static double alturaelementosappbar(BuildContext context){
-    return alturaappbar(context) * 0.5;
+    return alturaappbar(context) * 0.6;
   }
 
   static double larguralementosappbar(BuildContext context){
-    return larguraappbar(context) / 40;
+    return larguraappbar(context) / 35;
   }
   static double espacoentreredes(BuildContext context){
     return larguraappbar(context) / 100;
@@ -38,7 +38,7 @@ class Tamanho {
     return alturaappbar(context);
   }
   static double tamanholetras(BuildContext context){
-    return alturaappbar(context) / 5.2;
+    return alturaappbar(context)*larguraappbar(context) / 6000;
   }
 
 

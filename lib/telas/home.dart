@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mysite/componentes/botao_rede2.dart';
+import 'package:mysite/dados/dados.dart';
 import 'package:mysite/uteis/responsivo.dart';
 
 class Home extends StatefulWidget {
@@ -21,6 +23,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+
     return GestureDetector(
      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
@@ -42,7 +45,29 @@ class HomeMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+
+   //Dados links = Dados();
+
+    // return Container(
+    //   color: Colors.green,
+    //   child: Text("Mobile"),
+    // );
+
+    //return BotaoRede2(links: links.listaUrls);
+
+    return CustomScrollView(
+      controller: scrollController,
+      slivers: [
+        SliverPadding(
+          padding: EdgeInsets.all(1),
+          sliver: SliverToBoxAdapter(
+            child: BotaoRede2(
+              iconerede: iconerede,
+          ),
+          )
+          ),
+      ],
+    );
   }
 }
 
@@ -54,7 +79,10 @@ class HomeDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.red,
+      child: const Text("Desktop"),
+    );
   }
 }
 
@@ -66,7 +94,10 @@ class HomeTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: Colors.blue,
+      child: const Text("Tablet"),
+    );
   }
 }
 

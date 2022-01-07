@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:mysite/uteis/paleta_cores.dart';
 import 'package:mysite/uteis/tamanho.dart';
 
+import '../rotas.dart';
+
 class Logo extends StatefulWidget {
   const Logo({Key? key}) : super(key: key);
 
@@ -42,20 +44,26 @@ class _LogoState extends State<Logo> {
           ],
           //),
         ),
-        MouseRegion(
-          onEnter: _incrementEnter,
-          onExit: _incrementExit,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(12),
-            child: Container(
-              width: Tamanho.larguralogo(context),
-              height: Tamanho.alturalogo(context),
-              decoration: acionado ? BoxDecoration(
-                gradient: PaletaCores.degradeEstoria,
-                borderRadius: BorderRadius.circular(12),
-              ) : null,
+        GestureDetector(
+          onTap: (){
+            Navigator.pushReplacementNamed(context, Rotas.inicio);
+          },
+          child: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            onEnter: _incrementEnter,
+            onExit: _incrementExit,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Container(
+                width: Tamanho.larguralogo(context),
+                height: Tamanho.alturalogo(context),
+                decoration: acionado ? BoxDecoration(
+                  gradient: PaletaCores.degradeEstoria,
+                  borderRadius: BorderRadius.circular(12),
+                ) : null,
+              ),
             ),
-        ),
+          ),
         ),
       ],
     );

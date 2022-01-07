@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/componentes/regiao_mouse.dart';
+import 'package:mysite/componentes/botao_rede.dart';
+import 'package:mysite/componentes/botao_rede2.dart';
+import 'package:mysite/componentes/card_botao_redes_regiao_mouse.dart';
+import 'package:mysite/dados/dados.dart';
 import 'package:mysite/uteis/tamanho.dart';
 
 class BotoesRedes extends StatelessWidget {
-  const BotoesRedes({Key? key}) : super(key: key);
+
+  // final int indiceBotaoSelecionado;
+  // final Function(int) onTap;
+  // final List<String> urls;
+
+  const BotoesRedes({Key? key,}) : super(key: key);
 
   //https://icons8.com.br/icons/set/whatsApp--white
 
@@ -20,6 +28,9 @@ class BotoesRedes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+      //Dados links = Dados();
+
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -32,12 +43,14 @@ class BotoesRedes extends StatelessWidget {
           //         height: Tamanho.alturaelementosappbar(context)),
           //   ),
           // ),
-          Padding(padding: EdgeInsets.all(Tamanho.espacoentreredes(context))),
-          Container(
-            child: GestureDetector(
-              child: RegiaoMouse(),
-            ),
-          ),
+          // Padding(padding: EdgeInsets.all(Tamanho.espacoentreredes(context))),
+          // Container(
+          //   child: GestureDetector(
+          //     //child: const CardBotaoRedesRegiaoMouse(),
+          //   ),
+          // ),
+          //BotaoRede2(links: links.listaUrls),
+
           Padding(padding: EdgeInsets.all(Tamanho.espacoentreredes(context))),
           Container(
            child: GestureDetector(

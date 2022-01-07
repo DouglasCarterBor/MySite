@@ -4,7 +4,7 @@ import 'package:mysite/telas/principal.dart';
 
 class Rotas{
 
-  static const String inicio = "/telas/home";
+  static const String inicio = "/";
   static const String principal = "/telas/principal";
 
   static Route<dynamic> gerarRotas(RouteSettings settings){

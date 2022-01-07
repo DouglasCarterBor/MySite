@@ -25,7 +25,7 @@ class _PrincipalState extends State<Principal> {
       child: Scaffold(
       appBar: PreferredSize(child: const AppBarGeral(),
           preferredSize: Size(Tamanho.larguraappbar(context), Tamanho.alturaappbar(context))),
-      body: const Home(),
+        body: const Home(),
     ),
     );
   }

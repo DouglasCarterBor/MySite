@@ -1,19 +1,21 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mysite/dados/dados.dart';
 import 'package:mysite/uteis/paleta_cores.dart';
 import 'package:mysite/uteis/tamanho.dart';
 
 
-class RegiaoMouse extends StatefulWidget {
+class CardBotaoRedesRegiaoMouse extends StatefulWidget {
 
-  const RegiaoMouse({Key? key,}) : super(key: key);
+  const CardBotaoRedesRegiaoMouse({Key? key}) : super(key: key);
 
 
   @override
-  _RegiaoMouseState createState() => _RegiaoMouseState();
+  _CardBotaoRedesRegiaoMouseState createState() => _CardBotaoRedesRegiaoMouseState();
 }
 
-class _RegiaoMouseState extends State<RegiaoMouse> {
+class _CardBotaoRedesRegiaoMouseState extends State<CardBotaoRedesRegiaoMouse> {
 
   bool acionado = false;
   String? urlImagem;
@@ -57,21 +59,35 @@ class _RegiaoMouseState extends State<RegiaoMouse> {
 
 class ImagemRede extends StatelessWidget {
 
-  final String urlImagem = "https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png";
+  //final String urlImagem = "https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png";
 
   const ImagemRede({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
+    //Dados listaUrl = Dados();
+
     return Row(
-      //mainAxisAlignment: MainAxisAlignment.start,
+
       children: [
-        //const Padding(padding: EdgeInsets.all(3)),
-        CachedNetworkImage(
-          imageUrl: urlImagem,
-          width: Tamanho.larguralementosappbar(context),
-          height: Tamanho.alturaelementosappbar(context),
+        Container(
+          // color: Colors.red,
+          // child: ListView.builder(
+          //   scrollDirection: Axis.horizontal,
+          //   itemCount: listaUrl.listaUrls.length,
+          //     itemBuilder: (context, indice){
+          //            return CachedNetworkImage(
+          //              imageUrl: listaUrl.listaUrls[indice],
+          //              width: Tamanho.larguralementosappbar(context),
+          //              height: Tamanho.alturaelementosappbar(context),
+          //            );
+          //     }
+          //
+          // ),
         ),
+
+
       ],
       //),
     );
