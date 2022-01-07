@@ -16,7 +16,7 @@ class BotoesDireitaSuperior extends StatelessWidget {
           onPressed: (){},
           icon: const Icon(Icons.menu),
           color: Colors.white,
-          iconSize: 40,
+          iconSize: Tamanho.larguralementosappbar(context),
         ),
       ],
     );

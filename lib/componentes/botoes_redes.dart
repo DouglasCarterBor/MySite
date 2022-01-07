@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mysite/componentes/regiao_mouse.dart';
 import 'package:mysite/uteis/tamanho.dart';
 
 class BotoesRedes extends StatelessWidget {
@@ -23,19 +24,18 @@ class BotoesRedes extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Container(
-            child: GestureDetector(
-              child: Image.network("https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png",
-                  width: Tamanho.larguralementosappbar(context),
-                  height: Tamanho.alturaelementosappbar(context)),
-            ),
-          ),
+         // RegiaoMouse(),
+          // Container(
+          //   child: GestureDetector(
+          //     child: Image.network("https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png",
+          //         width: Tamanho.larguralementosappbar(context),
+          //         height: Tamanho.alturaelementosappbar(context)),
+          //   ),
+          // ),
           Padding(padding: EdgeInsets.all(Tamanho.espacoentreredes(context))),
           Container(
             child: GestureDetector(
-              child: Image.network("https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png",
-                  width: Tamanho.larguralementosappbar(context),
-                  height: Tamanho.alturaelementosappbar(context)),
+              child: RegiaoMouse(),
             ),
           ),
           Padding(padding: EdgeInsets.all(Tamanho.espacoentreredes(context))),

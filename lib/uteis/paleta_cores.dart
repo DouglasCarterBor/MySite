@@ -11,6 +11,7 @@ class PaletaCores {
   static const LinearGradient degradeEstoria = LinearGradient(
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
-      colors: [Colors.black45, Colors.black45]);
+      colors: [Colors.black54, Colors.black45]);
+      //colors: [Colors.red, Colors.red]);
 
 }

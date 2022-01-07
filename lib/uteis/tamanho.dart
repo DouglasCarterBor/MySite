@@ -26,7 +26,7 @@ class Tamanho {
   }
 
   static double larguralementosappbar(BuildContext context){
-    return larguraappbar(context) / 35;
+    return larguraappbar(context) / 40;
   }
   static double espacoentreredes(BuildContext context){
     return larguraappbar(context) / 100;

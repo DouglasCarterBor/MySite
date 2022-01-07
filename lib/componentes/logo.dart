@@ -55,9 +55,6 @@ class _LogoState extends State<Logo> {
                 borderRadius: BorderRadius.circular(12),
               ) : null,
             ),
-
-
-
         ),
         ),
       ],
