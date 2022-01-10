@@ -6,6 +6,7 @@ class BotaoRede extends StatelessWidget {
 
   final List<String> urls;
   final int indiceBotaoSelecionado;
+  //EXEMPLO DE PASSAGEM DE FUNÇÃO
   final Function(int) onTap;
 
 

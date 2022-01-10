@@ -62,7 +62,7 @@ class HomeMobile extends StatelessWidget {
           padding: EdgeInsets.all(1),
           sliver: SliverToBoxAdapter(
             child: BotaoRede2(
-              iconerede: iconerede,
+              //iconerede: iconerede,
           ),
           )
           ),

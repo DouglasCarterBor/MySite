@@ -48,7 +48,7 @@ class AppBarGeral extends StatelessWidget {
           ),
           isMobile ? Expanded(child: Container()) : Expanded(
             flex: 15,
-            child: BotaoRede2(iconerede: iconerede,),
+            child: BotaoRede2(),//iconerede: iconerede,),
             //child: BotoesRedes(),
           ),
           isMobile ? const Expanded(

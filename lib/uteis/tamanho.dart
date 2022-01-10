@@ -9,10 +9,10 @@ class Tamanho {
 
   static double alturaappbar(BuildContext context){
     double x;
-    if(MediaQuery.of(context).size.height < 50){
+    if(MediaQuery.of(context).size.height < 300){
       x = 50;
     } else {
-      x = MediaQuery.of(context).size.height / 11.5;
+      x = MediaQuery.of(context).size.height / 10;
     }
       return x;
   }
@@ -29,7 +29,7 @@ class Tamanho {
     return larguraappbar(context) / 35;
   }
   static double espacoentreredes(BuildContext context){
-    return larguraappbar(context) / 100;
+    return larguraappbar(context) / 90;
   }
   static double larguralogo(BuildContext context){
     return MediaQuery.of(context).size.width / 10;
