@@ -40,6 +40,12 @@ class Tamanho {
   static double tamanholetras(BuildContext context){
     return alturaappbar(context)*larguraappbar(context) / 6000;
   }
+  static double largurahome(BuildContext context){
+    return MediaQuery.of(context).size.width;
+  }
+  static double alturahome(BuildContext context){
+    return MediaQuery.of(context).size.height * 0.8;
+  }
 
 
 

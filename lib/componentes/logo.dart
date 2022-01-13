@@ -35,10 +35,21 @@ class _LogoState extends State<Logo> {
           //mainAxisAlignment: MainAxisAlignment.start,
           children: [
             //const Padding(padding: EdgeInsets.all(3)),
+            // MouseRegion(
+            //     cursor: SystemMouseCursors.click,
+            //     onEnter: _incrementEnter,
+            //     onExit: _incrementExit,
+            //   child: CachedNetworkImage(
+            // Image.asset("assets/logocarbo.png",
+            // width: Tamanho.larguralogo(context),
+            //   height: Tamanho.alturalogo(context),
+            // ),
             CachedNetworkImage(
-              imageUrl: "https://img.icons8.com/ios-filled/50/ffffff/dymo-connect.png",
-              width: Tamanho.larguralogo(context),
-              height: Tamanho.alturalogo(context),
+                // color: acionado ? Colors.grey : Colors.white,
+                imageUrl: "https://img.icons8.com/ios-filled/50/ffffff/dymo-connect.png",
+                width: Tamanho.larguralogo(context),
+                height: Tamanho.alturalogo(context),
+              // ),
             ),
           ],
           //),

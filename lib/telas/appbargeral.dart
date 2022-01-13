@@ -42,7 +42,7 @@ class AppBarGeral extends StatelessWidget {
             //   ),
             // ),
           ),
-          isMobile ? Expanded(child: Container()) : const Expanded(
+          const Expanded(
             flex: 20,
             child: BotoesMeioAppbar(),
           ),

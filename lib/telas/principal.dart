@@ -23,7 +23,7 @@ class _PrincipalState extends State<Principal> {
 
     return DefaultTabController(length: 1,
       child: Scaffold(
-      appBar: PreferredSize(child: const AppBarGeral(),
+        appBar: PreferredSize(child: const AppBarGeral(),
           preferredSize: Size(Tamanho.larguraappbar(context), Tamanho.alturaappbar(context))),
         body: const Home(),
     ),

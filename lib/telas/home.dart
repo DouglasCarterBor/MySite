@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mysite/componentes/botao_rede2.dart';
 import 'package:mysite/dados/dados.dart';
 import 'package:mysite/uteis/responsivo.dart';
+import 'package:mysite/uteis/tamanho.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -55,18 +56,22 @@ class HomeMobile extends StatelessWidget {
 
     //return BotaoRede2(links: links.listaUrls);
 
-    return CustomScrollView(
+    return Container(
+      width: 300,
+      child: CustomScrollView(
       controller: scrollController,
-      slivers: [
+      slivers: const [
         SliverPadding(
-          padding: EdgeInsets.all(1),
-          sliver: SliverToBoxAdapter(
-            child: BotaoRede2(
-              //iconerede: iconerede,
-          ),
-          )
-          ),
+            padding: EdgeInsets.all(1),
+            sliver: SliverToBoxAdapter(
+              child: BotaoRede2(
+                //iconerede: iconerede,
+              ),
+            )
+        ),
       ],
+    )
+
     );
   }
 }
@@ -80,8 +85,12 @@ class HomeDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: Tamanho.largurahome(context),
+      height: Tamanho.alturahome(context),
       color: Colors.red,
-      child: const Text("Desktop"),
+      child: const Expanded(
+        child: Text("Desktop"),
+      ),
     );
   }
 }
