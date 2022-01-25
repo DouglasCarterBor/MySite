@@ -14,20 +14,14 @@ class AppBarGeral extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final bool isMobile = Responsivo.isMobile(context);
     return Container(
       padding: const EdgeInsets.all(2),
       height: Tamanho.alturaappbar(context),
-      decoration: const BoxDecoration(
-          color: PaletaCores.corFundoBarra,
-          boxShadow: [BoxShadow(
-              color: Colors.black54,
-              offset: Offset(0, 2),
-              blurRadius: 4
-          ),
-          ]
-      ),
+      decoration:
+          const BoxDecoration(color: PaletaCores.corFundoBarra, boxShadow: [
+        BoxShadow(color: Colors.black54, offset: Offset(0, 2), blurRadius: 4),
+      ]),
       child: Row(
         children: [
           const Expanded(
@@ -42,23 +36,27 @@ class AppBarGeral extends StatelessWidget {
             //   ),
             // ),
           ),
-          const Expanded(
-            flex: 20,
-            child: BotoesMeioAppbar(),
-          ),
-          isMobile ? Expanded(child: Container()) : Expanded(
-            flex: 15,
-            child: BotaoRede2(),//iconerede: iconerede,),
-            //child: BotoesRedes(),
-          ),
-          isMobile ? const Expanded(
-            flex: 5,
-              child: BotoesDireitaSuperior(),
-              ) : Container(),
+          isMobile
+              ? Container()
+              : const Expanded(
+                  flex: 20,
+                  child: BotoesMeioAppbar(),
+                ),
+          isMobile
+              ? Expanded(child: Container())
+              : const Expanded(
+                  flex: 15,
+                  child: BotaoRede2(), //iconerede: iconerede,),
+                  //child: BotoesRedes(),
+                ),
+          isMobile
+              ? const Expanded(
+                  flex: 5,
+                  child: BotoesDireitaSuperior(),
+                )
+              : Container(),
         ],
       ),
     );
   }
 }
-
-
